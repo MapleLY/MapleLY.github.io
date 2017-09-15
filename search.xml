@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[你好]]></title>
-    <url>%2F2017%2F09%2F12%2Ffilename%2F</url>
-    <content type="text"><![CDATA[欢迎使用 {小书匠}(xiaoshujiang)编辑器，您可以通过==设置==里的修改模板来改变新建文章的内容。]]></content>
+    <title><![CDATA[《生成二维码》小试]]></title>
+    <url>%2F2017%2F09%2F13%2FGenerate-qr-code%2F</url>
+    <content type="text"><![CDATA[界面 代码相关 code传送门：https://github.com/MapleLY/Generate-qr-code]]></content>
       <categories>
-        <category>另一个分类</category>
+        <category>编程小试</category>
       </categories>
       <tags>
-        <tag>不是这个</tag>
+        <tag>system</tag>
+        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2017%2F09%2F12%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[《导师制双选系统》小试]]></title>
+    <url>%2F2017%2F09%2F13%2FTutorial-system-of-dual-selection%2F</url>
+    <content type="text"><![CDATA[系统介绍 《导师制双选系统》是建立在信息技术基础上，以系统化的管理思想，为导师和学生提供学生导师互选的平台，其核心思想是数据交互管理，即从数据交互去实现导师和学生选择的功能和实时更新数据。它整合了首页用户登录、个人资料、志愿选择和学生邀请、消息、信息查询、管理员对学生和导师的管理 六个功能模块。导师制双选系统是以信息为中心，整合用户不同界面进行导师制双选的功能实现。 首页用户登录：用户类型选择（学生、导师、管理员），用户输入账号与密码，并对账号与密码的输入情况进行处理。–这一模块，主要是验证用户的登录权限，是各个用户进入自己相关页面的需要验证的窗口。 个人资料：个人资料显示的是用户自己的个人信息和导师（或者学员）的信息。–这一模块引用了数据库的查询功能，实时更新个人信息和导师（或者学员）的信息。 志愿选择和学生邀请：这一模块根据用户的不同，其界面有显示的差异。–学生用户有志愿选择界面，显示的是当前可选导师（所收学员未满）列表和完整的导师信息列表。然后根据其可选导师列表中的工号来进行志愿选择。–导师用户有学生邀请界面，显示的是当前可选学生（没有导师）列表和完整的学生信息列表。然后根据其可选学生列表中的学号来对其发送邀请。–此模块运用了数据库的查询功能和修改功能。 消息 ：这一模块根据用户的不同，其界面有显示的差异–学生用户的消息界面，显示的是当前学生所收到的导师邀请，可进行选择和确认。–导师用户的消息界面，显示的是当前导师所收到的学生申请，可进行选择和确认。–此模块运用了数据库的查询功能和修改功能。 信息查询：这一模块根据用户选择类别（学生、导师），改变了下拉列表的改变–学生：学号、姓名、班级–导师：工号、姓名–根据不同的选择，在输入栏里进行模糊查询–此模块运用了数据库的查询功能。 管理员对学生和导师的管理：这一模块为管理员所拥有的权限。–能够添加、修改、删除学生和导师的账户信息。–此模块运用了数据库的增加、删除、修改的功能。 数据库 1.StudentLogin(学生账户表) 属性名 属性含义 数值类型 是否可为空 是否为主码 是否引用外码 Saccount 学生账号 varchar(20) No Yes No Spassword 学生密码 varchar(20) Yes No No 2.TutorLogin(导师账户表) 属性名 属性含义 数值类型 是否可为空 是否为主码 是否引用外码 Taccount 导师账号 varchar(20) No Yes No Tpassword 导师密码 varchar(20) Yes No No 3.AdLogin(学生账户表) 属性名 属性含义 数值类型 是否可为空 是否为主码 是否引用外码 Aaccount 管理员账号 varchar(20) No Yes No Apassword 管理员密码 varchar(20) Yes No No 4.Student(学生信息表) 属性名 属性含义 数值类型 是否可为空 是否为主码 是否引用外码 Sstudynumber 学生学号 varchar(10) No Yes No Sname 学生姓名 varchar(20) Yes No No Sclass 学生班级 varchar(30) Yes No No Schoose 导师个数 int Yes No No Syes 锁定 int Yes No No 5.Tutor(导师信息表) 属性名 属性含义 数值类型 是否为空 是否为主码 是否引用外码 Tworknumber 导师工号 Varchar(10) No Yes No Tname 导师姓名 Varchar(20) Yes No No Tchoose 学员个数 int Yes No No Tyes 锁定 int Yes No No 6.ST(学生导师关系表) 属性名 属性含义 数值类型 是否为空 是否为主码 是否引用外码 Sstudynumber 学生学号 Varchar(10) No Yes Yes Tworknumber 导师工号 Varchar(10) No Yes Yes SgetT 学生申请导师 int Yes No No TgetS 导师邀请学生 int Yes No No STok 学生导师关系建立 int Yes No No 界面一览 代码相关 code传送门：https://github.com/MapleLY/Tutorial-system-of-dual-selection 心得 此次试验最有感触的就是对代码的分类。将函数名和控件名都以一目了然的名字来编写，让我能在众多的代码中能找到我需要的函数和控件。 然后就是数据库的应用了。这次我真的是发现数据库编写的表格也具有考虑的地方，除了基本的信息外，可以利用其记号（如SgetT表示学生对导师的申请，TgetS表示导师对学生的邀请，而STok表示学生和导师存在师生的关系了）来完成对逻辑的构建和各个基础表格的关系（或者说我程序里面学生和导师之间的关系）。]]></content>
+      <categories>
+        <category>编程小试</category>
+      </categories>
+      <tags>
+        <tag>system</tag>
+        <tag>C#</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《班级管理系统》小试]]></title>
+    <url>%2F2017%2F09%2F13%2FClassManage%2F</url>
+    <content type="text"><![CDATA[系统介绍 《班级管理系统》实现了常见的班级管理、学生管理、课程管理等功能。 主要划分为以下三个功能模块，每个功能模块的作用描述如下： 班级管理：管理班级的信息，如：搜索查看班级信息，添加、删除或修改班级信息等等 学生管理：主要用来管理学生信息。学生登录系统后可以直接查看选课情况，并进行选课。同时教室可以查看学生选课情况，了解某门课程有多少人选。 课程管理：管理员可以对课程进行管理确定课程的数量。 界面一览 代码结构 采用Spring+Struts2+Hibernate框架开发 code传送门：https://github.com/MapleLY/ClassManage 心得 做这个小实验，主要偏向于对layui这个前端界面控件的利用。用上去很简单，但要是实现就麻烦得多了，主要是在js这一板块对控件实现功能上的调用和这个页面界面的实时变化，有些困难。 写到后来就，整个代码的面板就想是树藤缠绕木棍一样，看着什么都有，实则杂乱无章、重复、且无法复用，总之 …过于冗余。]]></content>
+      <categories>
+        <category>编程小试</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>layui</tag>
+        <tag>system</tag>
+      </tags>
   </entry>
 </search>
