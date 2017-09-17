@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[《MapleGameUI》小试]]></title>
-    <url>%2F2017%2F09%2F13%2FMapleGameUI%2F</url>
-    <content type="text"><![CDATA[界面 代码相关 code传送门： 体会 起初它吸引我的地方是它的界面更炫酷，很像我现在使用的win10等版本的操作系统。 接触后我发现它的界面编辑更是灵活，格式很像写html那样，直截了当。事件编写对于我来说还是不陌生，因为基本就是跟之前写winform的事件是一样的。我上网大致了一下WPF，其大众接纳并不高，界面好看的代价是吃电脑资源，那么很多电脑就运行不方便或者运行不了，那么做出来的软件推广度自然不高。但是，这些界面的编写灵活程度高和界面更好看这两点，我觉得我还是要去了解学习一样。]]></content>
+    <title><![CDATA[《图片标签APP》小试]]></title>
+    <url>%2F2017%2F09%2F13%2FPictrueTag%2F</url>
+    <content type="text"><![CDATA[界面 代码相关 code传送门：https://github.com/MapleLY/PictureTag]]></content>
       <categories>
         <category>编程小试</category>
       </categories>
       <tags>
-        <tag>C#</tag>
         <tag>system</tag>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《MapleGameUI》小试]]></title>
+    <url>%2F2017%2F09%2F13%2FMapleGameUI%2F</url>
+    <content type="text"><![CDATA[界面 代码相关 code传送门：https://github.com/MapleLY/MalpleGameUI 体会 起初它吸引我的地方是它的界面更炫酷，很像我现在使用的win10等版本的操作系统。 接触后我发现它的界面编辑更是灵活，格式很像写html那样，直截了当。事件编写对于我来说还是不陌生，因为基本就是跟之前写winform的事件是一样的。我上网大致了一下WPF，其大众接纳并不高，界面好看的代价是吃电脑资源，那么很多电脑就运行不方便或者运行不了，那么做出来的软件推广度自然不高。但是，这些界面的编写灵活程度高和界面更好看这两点，我觉得我还是要去了解学习一样。]]></content>
+      <categories>
+        <category>编程小试</category>
+      </categories>
+      <tags>
+        <tag>system</tag>
+        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -20,8 +32,8 @@
         <category>编程小试</category>
       </categories>
       <tags>
-        <tag>C#</tag>
         <tag>system</tag>
+        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -32,8 +44,8 @@
         <category>编程小试</category>
       </categories>
       <tags>
-        <tag>C#</tag>
         <tag>system</tag>
+        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -44,8 +56,8 @@
         <category>编程小试</category>
       </categories>
       <tags>
-        <tag>C#</tag>
         <tag>system</tag>
+        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -56,9 +68,9 @@
         <category>编程小试</category>
       </categories>
       <tags>
-        <tag>system</tag>
         <tag>java</tag>
         <tag>layui</tag>
+        <tag>system</tag>
       </tags>
   </entry>
 </search>
