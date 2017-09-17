@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[《MapleGameUI》小试]]></title>
+    <url>%2F2017%2F09%2F13%2FMapleGameUI%2F</url>
+    <content type="text"><![CDATA[界面 代码相关 code传送门： 体会 起初它吸引我的地方是它的界面更炫酷，很像我现在使用的win10等版本的操作系统。 接触后我发现它的界面编辑更是灵活，格式很像写html那样，直截了当。事件编写对于我来说还是不陌生，因为基本就是跟之前写winform的事件是一样的。我上网大致了一下WPF，其大众接纳并不高，界面好看的代价是吃电脑资源，那么很多电脑就运行不方便或者运行不了，那么做出来的软件推广度自然不高。但是，这些界面的编写灵活程度高和界面更好看这两点，我觉得我还是要去了解学习一样。]]></content>
+      <categories>
+        <category>编程小试</category>
+      </categories>
+      <tags>
+        <tag>C#</tag>
+        <tag>system</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[《食品进销存管理系统》小试]]></title>
     <url>%2F2017%2F09%2F13%2FFood-marketing-management-system%2F</url>
     <content type="text"><![CDATA[系统介绍–系统主要包括仓库显示、采购管理、库存管理、退货管理等功能。–软件主要服务中小型食品商铺对于食品货物的进货、出货和存货管理，作为管理货品的管理工具。系统的运行基础是个人电脑，采用基于WinForm的C/S结构，操作界面容易使用和掌握，基本上会Windows基本操作就能很快了解并且掌握系统的使用方法。 数据库用户表(UserTable) 字段名 中文含义 数据类型 允许空 约束条件 UserName 用户名 nvarchar(50) N 主键 UserPwd 密码 nvarchar(50) N 无 供应商货品汇总表(GYSAllFood) 字段名 中文含义 数据类型 允许空 约束条件 GYS 供应商名称 nvarchar(50) N 无 GYSFoodName 商品名称 nvarchar(50) N 无 GYSFoodType 商品类型 nvarchar(50) N 无 GYSDM 商品单价 decimal(10,2) N 无 GYSDiscountL 折扣率 decimal(10,2) N 无 GYSQuantity 商家货存 decimal(10,2) N 无 GYSText 备注 nvarchar(50) Y 无 库存表(KC) 字段名 中文含义 数据类型 允许空 约束条件 KCGYS 供应商名称 nvarchar(50) N 无 KCFoodName 商品名称 nvarchar(50) N 无 KCFoodType 商品类型 nvarchar(50) N 无 KCBM 成本 decimal(10,2) N 无 KCSJ 售价 decimal(10,2) N 无 KCQuantity 仓库存货 decimal(10,2) N 无 采购订单表(CG) 字段名 中文含义 数据类型 允许空 约束条件 OrderMum 采购订单编号 nvarchar(50) N 无 CGTime 采购日期 date N 无 CGGYS 供应商名称 nvarchar(50) N 无 CGFoodName 商品名称 nvarchar(50) N 无 CGFoodType 商品类型 nvarchar(50) N 无 CGDM 购货单价 decimal(10,2) N 无 CGQuantity 购货数量 decimal(10,2) N 无 CGDiscountL 折扣率 decimal(10,2) N 无 CGDiscountM 折扣额 decimal(10,2) N 无 CGAM 购货金额 decimal(10,2) N 无 CGText 备注 nvarchar(50) Y 无 CGState 状态 nvarchar(50) N 无 入库单表(RK) 字段名 中文含义 数据类型 允许空 约束条件 RKNum 入库编号 nvarchar(50) N 主键 RKTime 入库日期 date N 外键 RKGYS 供应商名称 nvarchar(50) N 外键 RKFoodName 商品名称 nvarchar(50) N 无 RKFoodType 商品类型 nvarchar(50) N 无 RKDM 单价 decimal(10,2) N 无 RKQuantity 入库数量 decimal(10,2) Y 外键 RKDiscountL 折扣率 decimal(10,2) N 外键 RKDiscountM 折扣额 decimal(10,2) N 无 RKAM 实付金额 decimal(10,2) Y 无 RKText 备注 nvarchar(50) Y 外键 出库表(CK) 字段名 中文含义 数据类型 允许空 约束条件 CKNum 出库编号 nvarchar(50) N 无 CKTime 出库日期 date N 无 CKGYS 供应商名称 nvarchar(50) N 无 CKFoodName 商品名称 nvarchar(50) N 无 CKFoodType 商品类型 nvarchar(50) N 无 CKDM 成本 decimal(10,2) N 无 CKSJ 售价 decimal(10,2) N 无 CKQuantity 数量 decimal(10,2) N 无 CKAM 出售金额 decimal(10,2) N 无 CKLR 利润 decimal(10,2) N 无 CKText 备注 nvarchar(50) Y 无 退货单表(TH) 字段名 中文含义 数据类型 允许空 约束条件 THNum 退货单编号 nvarchar(50) N 无 THTime 退货日期 date N 无 THGYS 供应商名称 nvarchar(50) N 无 THFoodName 商品名称 nvarchar(50) N 无 THFoodType 商品类型 nvarchar(50) N 无 THDM 购货单价 decimal(10,2) N 无 THQuantity 退货数量 decimal(10,2) N 无 THDiscountL 折扣率 decimal(10,2) N 无 THDiscountM 折扣额 decimal(10,2) N 无 THAM 退货金额 decimal(10,2) N 无 THText 备注 nvarchar(50) Y 无 界面设计主页面设计 系统主页面分为两个部分，左侧是工具栏，用户登录进来后所拥有的功能都在这里显示。中间最大的区域是业务操作区，单击左侧功能项之后弹出的窗口都将在此显示。 选项卡设计 为了方便用户的操作，打开新的页面时系统会以选项卡的方式在中间部分显示。系统允许用户同时打开多个选项卡且支持关闭操作。如果用户要打开的页面已经存在，那么不会打开相同的页面，而是选中选项卡。 工具栏设计 为了方便用户的操作，鼠标移向相关项，可自动弹出相关选择项，就可显示用户想要的界面。 实现模块我的仓库模块 用户可以点击列表中的相关项的任意处，下方就自动填补相关信息，只需修改销售价格，就可以完成商品的销售价格的修改。 食品采购模块 食品采购显示了相关商品的列表，可通过查询方式定向查找，点选了列表中的相关项，下方自动补全相关信息，只需要填写购买数量，即可购买。 采购单查询中，是在已有采购项后才可显示列表内容，可以进行日期段进行查询。 供应商货品汇总是采购货品的前提，在有供应商货品存货时，才可进行采购操作。用户和供应商进行交流协商后，可将供应商提供的商品信息填入此处，在此页面点击添加商品。 填写供应商商品信息，备注添加用户需要提醒的相关内容。 然后就在供应商商品汇总中显示，左边的×可以对单项列表进行删除 库存管理模块 库存管理模块中有入库、入库查询、出库、出库查询操作，入库的列表是根据之前完成的采购单显示的，通过点选列中的项目，下方信息就完成填写，可确认入库。 入库后可进行入库查询，可根据日期搜索 出库的前提是仓库里面存在商品信息，之前入库的内容，在出库都能显示。可点选列表中的项目，在下放显示部分信息，用户此刻就需要填写出库数量，而出售金额和利润将由系统自己计算，可确认出库 出库内容可在出库查询中查看 退货管理模块 根据采购单显示在列表中，点选项目可在下放显示相关信息，用户可以填写退货数量，系统自动计算填写折扣率和退货金额。 退货信息可在退货查询中查看 代码相关 code传送门：https://github.com/MapleLY/Food-marketing-management-system 结语 本系统服务的对象是中小型商铺，主要包含的模块有我的仓库、食品采购、库存管理、退货管理。供应商商品为起始点，仓库为基础，几个模块之间的交流是就是商品信息的变化。并且经过缜密的设计后符合商铺的实际业务流程。在系统的过程中我学到了并使用到了很多技术，包括WinForm、SQLServer，最重要的是学习能力得到了很大提高。 从系统功能来讲，基于WinForm的食品进销管理系统的功能达到了预期的效果，重绘和委托的使用，让程序界面的实用性也得到了很大提高。]]></content>
@@ -8,8 +20,8 @@
         <category>编程小试</category>
       </categories>
       <tags>
-        <tag>system</tag>
         <tag>C#</tag>
+        <tag>system</tag>
       </tags>
   </entry>
   <entry>
@@ -20,8 +32,8 @@
         <category>编程小试</category>
       </categories>
       <tags>
-        <tag>system</tag>
         <tag>C#</tag>
+        <tag>system</tag>
       </tags>
   </entry>
   <entry>
@@ -32,8 +44,8 @@
         <category>编程小试</category>
       </categories>
       <tags>
-        <tag>system</tag>
         <tag>C#</tag>
+        <tag>system</tag>
       </tags>
   </entry>
   <entry>
@@ -44,9 +56,9 @@
         <category>编程小试</category>
       </categories>
       <tags>
+        <tag>system</tag>
         <tag>java</tag>
         <tag>layui</tag>
-        <tag>system</tag>
       </tags>
   </entry>
 </search>
